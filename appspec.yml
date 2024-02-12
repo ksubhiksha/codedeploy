@@ -4,8 +4,8 @@ files:
  - source: /index.html
    destination: /var/www/html
 hooks:
- Beforeinstall:
-  #- location: /scripts/httpd_install.sh
+ Afterinstall:
+ #- location: /scripts/httpd_install.sh
     # runas: root
   - location: /scripts/httpd_start.sh
     
