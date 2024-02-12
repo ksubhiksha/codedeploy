@@ -4,12 +4,11 @@ files:
  - source: /index.html
    destination: /var/www/html
 hooks:
- Afterinstall:
- #- location: /scripts/httpd_install.sh
-    # runas: root
-  - location: /scripts/httpd_start.sh
-    
-    runas: root
+ Beforerinstall:
+   - location: scripts/httpd_install
+     runas: root
+   - location: scripts/httpd_start
+     runas: root
  
 
 
